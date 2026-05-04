@@ -8,7 +8,7 @@
 ---
 **This is a skeleton repo for scaffolding new Laravel packages.**
 
-It bundles the tooling we reach for on every package: Pest, PHPStan, Rector, Laravel Pint, and Orchestra Testbench. Run the configure script once and start writing code.
+It bundles the tooling we reach for on every package: Pest, PHPStan, Laravel Pint, and Orchestra Testbench. Run the configure script once and start writing code.
 
 ### Quick start
 
@@ -30,8 +30,8 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 
 ## Requirements
 
-- PHP ^8.2
-- Laravel ^10.0 || ^11.0 || ^12.0 || ^13.0
+- PHP ^8.3
+- Laravel ^12.0 || ^13.0
 
 ## Installation
 
@@ -63,7 +63,7 @@ composer test
 Or run checks individually:
 
 ```bash
-composer lint        # Auto-fix code style (Rector + Pint)
+composer lint        # Auto-fix code style (Pint)
 composer test:lint   # Check code style without changing files
 composer test:types  # Run PHPStan static analysis
 composer test:unit   # Run Pest tests with coverage
