@@ -20,6 +20,6 @@ final class SkeletonServiceProvider extends PackageServiceProvider
 
     public function packageRegistered(): void
     {
-        $this->app->singleton(Skeleton::class, fn () => new Skeleton);
+        $this->app->singleton(Skeleton::class, fn (): Skeleton => new Skeleton);
     }
 }
