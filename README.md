@@ -8,7 +8,7 @@
 ---
 **This is a skeleton repo for scaffolding new Laravel packages.**
 
-It bundles the tooling we reach for on every package: Pest, PHPStan, Laravel Pint, and Orchestra Testbench. Run the configure script once and start writing code.
+It bundles the tooling we reach for on every package: Pest, PHPStan, Laravel Pint, Rector, and Orchestra Testbench. Run the configure script once and start writing code.
 
 ### Quick start
 
@@ -63,10 +63,12 @@ composer test
 Or run checks individually:
 
 ```bash
-composer lint        # Auto-fix code style (Pint)
-composer test:lint   # Check code style without changing files
-composer test:types  # Run PHPStan static analysis
-composer test:unit   # Run Pest tests with coverage
+composer lint          # Auto-fix code style/refactors (Pint + Rector)
+composer lint:rector   # Run Rector only
+composer test:lint     # Check Pint + Rector without changing files
+composer test:refactor # Check Rector without changing files
+composer test:types    # Run PHPStan static analysis
+composer test:unit     # Run Pest tests with coverage
 ```
 
 ## Changelog
