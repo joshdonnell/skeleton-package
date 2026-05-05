@@ -50,7 +50,7 @@ jobs:
           restore-keys: ${{ runner.os }}-phpstan-8.3-
 
       - name: Create Cache Directories
-        run: mkdir -p /tmp/phpstan
+        run: mkdir -p /tmp/phpstan /tmp/rector
 
       - name: Lint Checks
         run: composer test:lint
